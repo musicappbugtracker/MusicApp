@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- @author Karim Abou Zeid (kabouzeid)
+
+This file is part of Music App.
+
+Music App is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Music App is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Music App.  If not, see <https://www.gnu.org/licenses/>.-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?rectSelector"
+    android:gravity="center_vertical|start"
+    android:minHeight="@dimen/tab_height"
+    android:orientation="horizontal"
+    android:paddingStart="12dp"
+    android:paddingLeft="12dp"
+    android:paddingEnd="4dp"
+    android:paddingRight="4dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:paddingEnd="8dp"
+        android:paddingRight="8dp"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        tools:ignore="RtlSymmetry,UnusedAttribute"
+        tools:text="Storage"
+        tools:textColor="#000" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_keyboard_arrow_right_white_24dp"
+        tools:tint="#000"
+        tools:visibility="visible" />
+
+</LinearLayout>

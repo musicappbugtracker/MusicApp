@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- @author Karim Abou Zeid (kabouzeid)
+
+This file is part of Music App.
+
+Music App is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Music App is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Music App.  If not, see <https://www.gnu.org/licenses/>.-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_scrim_height"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/dummy_statusbar_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <app.musicapp.music.views.StatusBarView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/status_bar_padding" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/dummy_statusbar_actionbar"
+        android:layout_alignBottom="@id/dummy_statusbar_actionbar"
+        android:background="@drawable/toolbar_gradient" />
+
+</RelativeLayout>
